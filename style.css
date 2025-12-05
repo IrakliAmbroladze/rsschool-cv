@@ -132,7 +132,7 @@ h1 {
   color: white;
 }
 
-.bio-subsection-header {
+.subsection-header {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   transform: rotate(180deg);
@@ -184,6 +184,40 @@ ul {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 28px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 32px;
+  margin: 35px 16px;
+}
+
+.grid-column {
+  display: flex;
+  column-gap: 16px;
+}
+.grid-column-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.grid-item-header {
+  font-size: 10px;
+  font-weight: 600;
+}
+.grid-item-subheader,
+.grid-item-content {
+  padding: 0 16px;
+}
+.grid-item-subheader {
+  margin: 8px 0;
+  font-size: 8px;
+}
+.grid-item-content {
+  font-size: 8px;
+  font-weight: 600;
+  color: #909090;
+  font-style: italic;
 }
 .right-card {
   border-left: 1px solid var(--border);
