@@ -8,4 +8,16 @@
     max-width: 253px;
     background: var(--rootbg);
   }
+  .name,
+  .surname {
+    font-size: 32px;
+  }
+
+  .title-top,
+  .title-bottom {
+    padding: 4px 24px;
+  }
+  .title-top {
+    height: 100px;
+  }
 }
