@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  .container {
+    margin: 36px auto;
+    padding: 40px;
+  }
+  .avatar {
+    max-height: 337px;
+    max-width: 253px;
+    background: var(--rootbg);
+  }
+}
