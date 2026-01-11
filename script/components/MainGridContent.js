@@ -1,9 +1,11 @@
+import { MAIN_GRID_CONTENT } from "../constants/content.js";
 import ContentItem from "./ContentItem.js";
 
 export const MainGridContent = () => {
   const section_element = document.getElementById("main-grid-content");
   section_element.classList.add("grid");
-  section_element.textContent = "test connecting to js";
-  const div_element = ContentItem();
-  section_element.appendChild(div_element);
+  MAIN_GRID_CONTENT.map((item) => {
+    const div_element = ContentItem();
+    section_element.appendChild(div_element);
+  });
 };
