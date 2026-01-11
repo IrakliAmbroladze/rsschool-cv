@@ -1,8 +1,9 @@
 export default function ContentItem(item) {
-  console.log(item);
   const div_element = document.createElement("div");
-  const h1_element = document.createElement("h1");
-  h1_element.textContent = item.title;
-  div_element.appendChild(h1_element);
+  div_element.classList.add("grid-column");
+  const h2_element = document.createElement("h2");
+  h2_element.classList.add("subsection-header");
+  h2_element.textContent = item.title;
+  div_element.appendChild(h2_element);
   return div_element;
 }
