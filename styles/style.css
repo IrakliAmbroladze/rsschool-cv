@@ -259,6 +259,13 @@ ul {
   gap: 4px;
 }
 
+.main-grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 32px;
+  margin: 35px 16px;
+}
+
 footer {
   margin-top: 20px;
   font-size: 13px;
