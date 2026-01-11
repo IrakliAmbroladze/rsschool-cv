@@ -1,6 +1,8 @@
-export default function ContentItem() {
-  console.log("we are in Content Item");
+export default function ContentItem(item) {
+  console.log(item);
   const div_element = document.createElement("div");
-  div_element.textContent = "new test div from ContentItem";
+  const h1_element = document.createElement("h1");
+  h1_element.textContent = item.title;
+  div_element.appendChild(h1_element);
   return div_element;
 }
