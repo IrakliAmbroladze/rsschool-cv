@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .container {
     margin: 36px auto;
     padding: 40px;
@@ -28,5 +28,11 @@
   }
   .quote {
     line-height: 16px;
+  }
+  .bio {
+    flex-direction: row;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
