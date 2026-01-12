@@ -66,6 +66,41 @@ export const MAIN_GRID_CONTENT = [
     ],
   },
   {
+    title: "Technical Skills",
+    data: [
+      {
+        title: "Languages",
+        subtitle: "JavaScript, TypeScript, Basic Rust, Basic Java, Rust + WASM",
+        description: "",
+      },
+      {
+        title: "Frontend",
+        subtitle: "React.js, Next.js, HTML5, CSS3",
+        description: "",
+      },
+      {
+        title: "Backend & DB",
+        subtitle: "Rust, Node.js, Supabase, Postgress, REST APIs",
+        description: "",
+      },
+    ],
+  },
+  {
+    title: "Education",
+    data: [
+      {
+        title: "Master's Degree in Philosophy",
+        subtitle: "Ivane Javakhishvili Tbilisi State University 2013 – 2015",
+        description: `Thesis: "Text, Intertext, Cultural context"`,
+      },
+      {
+        title: "Bachelor's Degree in Business Administration",
+        subtitle: "Free University of Tbilisi 2009 – 2013",
+        description: "Major: Business Administration; Minor: Programming",
+      },
+    ],
+  },
+  {
     title: "Languages",
     data: [
       {
