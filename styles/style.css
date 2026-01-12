@@ -282,6 +282,10 @@ footer {
 
 /* print */
 @media print {
+  @page {
+    margin: 0;
+  }
+
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -290,11 +294,17 @@ footer {
   html,
   body {
     background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .container {
-    margin: 0;
+    width: 595px !important;
+    max-width: 595px !important;
+    margin: 0 auto !important;
+    padding: 10mm !important;
     background: white !important;
     box-shadow: none !important;
+    box-sizing: border-box !important;
   }
 }
