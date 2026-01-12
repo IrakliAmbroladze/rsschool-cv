@@ -80,7 +80,7 @@ export const MAIN_GRID_CONTENT = [
       },
       {
         title: "Backend & DB",
-        subtitle: "Rust, Node.js, Supabase, Postgress, REST APIs",
+        subtitle: "Rust, Node.js, Supabase, PostgreSQL, REST APIs",
         description: "",
       },
     ],
