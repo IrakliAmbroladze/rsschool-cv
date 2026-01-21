@@ -186,11 +186,21 @@ ul {
   grid-template-columns: 1fr 320px;
   gap: 28px;
 }
+
+.note {
+  font-size: 8px;
+  margin: 35px 16px 10px;
+}
+
+.note a {
+  color: black;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px 32px;
-  margin: 35px 16px;
+  margin: 0 16px;
 }
 
 .grid-column {
