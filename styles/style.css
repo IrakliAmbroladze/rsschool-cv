@@ -86,6 +86,7 @@ h1 {
 }
 
 .cv {
+  margin-top: 20px;
   font-size: 10px;
 }
 .name,
@@ -293,6 +294,9 @@ footer {
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media (max-width: 880px) {
