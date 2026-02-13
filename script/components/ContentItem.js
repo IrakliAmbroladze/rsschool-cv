@@ -9,7 +9,7 @@ export default function ContentItem(item) {
   h2_element.textContent = item.title;
   div_element.appendChild(h2_element);
 
-  const container = document.createElement("div");
+  const container = document.createElement("ul");
   container.className = "grid-column-container";
 
   item.data.forEach((element) => {

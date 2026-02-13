@@ -1,5 +1,5 @@
 export const SingleItem = ({ data }) => {
-  const el = document.createElement("div");
+  const el = document.createElement("li");
   el.className = "grid-item";
 
   const elements = [
