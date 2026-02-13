@@ -85,6 +85,24 @@
           </ul>
         </div>
       </section>
+      <section class="kata-example">
+        <h2>Codewars Kata example — Only One Flag</h2>
+        <p class="kata-description">
+          Description: Write a function that returns <code>true</code> if
+          exactly one boolean flag is true.
+        </p>
+        <figure class="code-block">
+          <figcaption>Solution (JavaScript)</figcaption>
+          <pre><code class="language-js">
+  function onlyOne(...args) {
+    let countTrues = 0;
+    args.forEach((arg) => arg === true && countTrues++);
+    return countTrues === 1;
+  }
+
+</code></pre>
+        </figure>
+      </section>
       <p class="note">
         Note: A complete list of my projects is available in my portfolio. You
         can find it at:<a

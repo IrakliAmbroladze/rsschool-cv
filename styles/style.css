@@ -208,7 +208,7 @@ ul {
 
 .note {
   font-size: 8px;
-  margin: 35px 16px 10px;
+  margin: 15px 16px 10px;
 }
 
 .note a {
@@ -288,6 +288,39 @@ ul {
 .contact-list li {
   display: flex;
   gap: 4px;
+}
+
+.kata-example {
+  font-size: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--rootbg);
+  border-radius: 4px;
+  padding: 4px;
+}
+.kata-description {
+  font-weight: 400;
+}
+.code-block {
+  margin-top: 2px;
+}
+
+.code-block pre {
+  letter-spacing: 0;
+  background: var(--accent);
+  color: #e5e7eb;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.code-block figcaption {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 8px;
 }
 
 footer {
