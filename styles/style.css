@@ -237,18 +237,23 @@ ul {
   font-weight: 600;
 }
 .grid-item-subheader,
-.grid-item-content {
+.grid-item-content,
+.url {
   padding: 0 16px;
 }
 .grid-item-subheader {
   margin: 8px 0;
   font-size: 8px;
 }
-.grid-item-content {
+.grid-item-content,
+.url {
   font-size: 8px;
   font-weight: 600;
   color: #909090;
   font-style: italic;
+}
+.url {
+  color: black;
 }
 .right-card {
   border-left: 1px solid var(--border);
