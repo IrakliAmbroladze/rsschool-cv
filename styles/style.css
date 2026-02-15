@@ -19,13 +19,31 @@ body {
   height: 100%;
   margin: 0;
   background: var(--rootbg);
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 595px;
-  margin: 36px auto;
+  margin: 12px auto;
+  padding: 10px;
   background: var(--bg);
   box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
-  padding: 40px;
+}
+
+.navigation ul {
+  display: flex;
+  font-size: 12px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.navigation ul a {
+  color: black;
+}
+.navigation ul a:hover {
+  color: rgb(120 113 108);
 }
 main {
   display: flex;
@@ -38,8 +56,8 @@ h1 {
 }
 
 .avatar {
-  height: 337px;
-  width: 253px;
+  max-height: 200px;
+  max-width: 153px;
   background: var(--rootbg);
 }
 
@@ -51,41 +69,42 @@ h1 {
 
 .title-top,
 .title-bottom {
-  padding: 4px 24px;
+  padding: 4px 12px;
 }
 .title-top {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100px;
+  height: 50px;
 }
 .title-bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 170px;
+  height: 130px;
   background-color: #f1f1f1;
 }
 
 .cv {
+  margin-top: 20px;
   font-size: 10px;
 }
-.name {
-  font-size: 32px;
-  font-weight: bold;
-}
+.name,
 .surname {
-  font-size: 32px;
+  font-size: 18px;
+}
+.name {
+  font-weight: bold;
 }
 
 .profession {
-  font-size: 16px;
+  font-size: 10px;
   text-transform: uppercase;
   font-style: italic;
 }
 .quote {
   font-size: 8px;
-  line-height: 16px;
+  line-height: 12px;
   max-width: 170px;
 }
 
@@ -122,6 +141,7 @@ h1 {
 
 .bio {
   display: flex;
+  flex-direction: column;
   margin-top: 32px;
 }
 
@@ -185,11 +205,21 @@ ul {
   grid-template-columns: 1fr 320px;
   gap: 28px;
 }
+
+.note {
+  font-size: 8px;
+  margin: 15px 16px 10px;
+}
+
+.note a {
+  color: black;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px 32px;
-  margin: 35px 16px;
+  margin: 0 16px;
 }
 
 .grid-column {
@@ -200,24 +230,30 @@ ul {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  margin: 0;
 }
 .grid-item-header {
   font-size: 10px;
   font-weight: 600;
 }
 .grid-item-subheader,
-.grid-item-content {
+.grid-item-content,
+.url {
   padding: 0 16px;
 }
 .grid-item-subheader {
   margin: 8px 0;
   font-size: 8px;
 }
-.grid-item-content {
+.grid-item-content,
+.url {
   font-size: 8px;
   font-weight: 600;
   color: #909090;
   font-style: italic;
+}
+.url {
+  color: black;
 }
 .right-card {
   border-left: 1px solid var(--border);
@@ -259,11 +295,47 @@ ul {
   gap: 4px;
 }
 
+.kata-example {
+  font-size: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--rootbg);
+  border-radius: 4px;
+  padding: 4px;
+}
+.kata-description {
+  font-weight: 400;
+}
+.code-block {
+  margin-top: 2px;
+}
+
+.code-block pre {
+  letter-spacing: 0;
+  background: var(--accent);
+  color: #e5e7eb;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.code-block figcaption {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 8px;
+}
+
 footer {
   margin-top: 20px;
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media (max-width: 880px) {
@@ -282,11 +354,30 @@ footer {
 
 /* print */
 @media print {
-  body {
-    background: white;
+  @page {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html,
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .container {
-    box-shadow: none;
-    border-radius: 0;
+    width: 595px !important;
+    max-width: 595px !important;
+    margin: 0 auto !important;
+    background: white !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
   }
 }
