@@ -3,22 +3,28 @@ export const MAIN_GRID_CONTENT = [
     title: "Key Projects",
     data: [
       {
-        title: "ERP Lite System",
-        subtitle: "(Personal / Business Project) — React, Next.js, Supabase",
+        title: "Primal training",
+        subtitle: "(Personal Project) — HTML, SCSS",
         description:
-          "Developed a comprehensive ERP platform for pest control business “Killers”. Features: client order management, technician scheduling, financial reporting, inventory tracking. Reduced operational overhead by 40% and improved client communication efficiency.",
+          "A fully responsive landing page built with HTML and SCSS, following a component-based structure and modern UI practices. The project supports desktop, tablet, and mobile views.",
+        live_url: "https://irakliambroladze.github.io/primal-training/",
+        source_code: "https://github.com/IrakliAmbroladze/primal-training",
       },
       {
-        title: "E-commerce Platform",
-        subtitle: "(TBC Academy Capstone) — React, Next.js, Supabase, Stripe",
+        title: "Weather Forecast",
+        subtitle: "(Personal Project) — React, Tailwind CSS",
         description:
-          "Built full-featured e-commerce application with shopping cart and payment processing. Implemented secure payment integration using Stripe API. Focused on responsive design and user experience optimization.",
+          "A modern, responsive weather application built with React and Vite that provides real-time weather information for cities worldwide.",
+        live_url: "https://amindi-app.vercel.app/",
+        source_code: "https://github.com/IrakliAmbroladze/weather-app",
       },
       {
-        title: "Connect Employees",
-        subtitle: "(Team Collaboration Platform) — React, Next.js, Supabase",
+        title: "Chess",
+        subtitle: "(Personal Project) — Rust, Leptos, Axum",
         description:
-          "Built full-featured e-commerce application with shopping cart and payment processing. Implemented secure payment integration using Stripe API. Focused on responsive design and user experience optimization",
+          "A full-stack chess application built entirely in Rust, featuring real-time multiplayer gameplay with WebSockets, timers, and full chess rules validation.",
+        live_url: "https://chess-app-irakli.fly.dev/",
+        source_code: "https://github.com/IrakliAmbroladze/chess-app",
       },
     ],
   },
