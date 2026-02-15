@@ -1,9 +1,12 @@
-# rsschool-cv
+# CV Website — Irakli Ambroladze
 
-https://irakliambroladze.github.io/rsschool-cv/cv
+A personal CV built with HTML/CSS hosted on GitHub Pages — showcases my skills,
+experience, and contact information. 
 
----
+## About
+- Live hosted version of my CV: https://irakliambroladze.github.io/cv/
+see also:
+- Live hosted version of my portfolio: https://irakliambroladze.github.io/portfolio/
 
-## html/css
-
-https://irakliambroladze.github.io/rsschool-cv/
+## Contact
+✉ ambroladzeirakli@gmail.com

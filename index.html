@@ -1,387 +1,128 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="./styles/reset.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/media.css" >
     <title>Irakli Ambroladze</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div>
-          <div class="title">
-            <h1>Curriculum Vitae</h1>
-            <h2>Irakli Ambroladze</h2>
-            <div class="subtitle">
-              Software Engineer · Full-Stack Developer · Business Systems
-              Specialist
-            </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#main-grid-content">Projects</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <img src="./assets/cv.png" class="avatar" alt="avatar" >
+        <h1 class="header-content">
+          <span class="title-top">
+            <span class="cv">Curriculum Vitae</span>
+            <span class="name">Irakli</span>
+          </span>
+          <span class="title-bottom">
+            <span class="surname">Ambroladze</span>
+            <span class="profession">Software developer</span>
+            <span class="quote">
+              Crafting software is not just about writing code, but about
+              delivering value
+            </span>
+            <span class="line-square">
+              <span class="line"></span>
+              <span class="square bg-black"></span>
+            </span>
+          </span>
+        </h1>
+      </main>
+      <section class="bio">
+        <div class="about-me" id="about-me">
+          <h2 class="subsection-header">About me</h2>
+          <p class="small">
+            <span
+              >Software Engineer with a unique interdisciplinary background
+              combining technical expertise, business acumen, and analytical
+              thinking. Specialized in building scalable web applications, ERP
+              systems, and financial dashboards using modern JavaScript
+              technologies.</span
+            >
+            <br >
+            <br >
+            <span
+              >My diverse experience in business management, academic research,
+              and software development enables me to bridge technical solutions
+              with real-world business needs effectively.</span
+            >
+          </p>
+          <div class="square-wrapper">
+            <div class="square bg-white"></div>
           </div>
-          <div class="contact">
-            <div>
-              <strong>Address</strong><br />Nutsubidze 86, Tbilisi, Georgia
-            </div>
-            <div style="margin-top: 8px">
-              <strong>Phone</strong><br />(+995) 593 434344
-            </div>
-            <div style="margin-top: 8px">
-              <strong>Email</strong><br /><a
-                href="mailto:ambroladzeirakli@gmail.com"
+        </div>
+        <div class="contact" id="contact">
+          <h2 class="subsection-header">contact</h2>
+          <ul class="contact-list">
+            <li>
+              ✉
+              <a href="mailto:ambroladzeirakli@gmail.com"
                 >ambroladzeirakli@gmail.com</a
               >
-            </div>
-            <div style="margin-top: 8px">
-              <strong>GitHub</strong><br /><a
+            </li>
+            <li>
+              <a
                 href="https://github.com/IrakliAmbroladze"
                 target="_blank"
                 rel="noopener"
                 >github.com/IrakliAmbroladze</a
               >
-            </div>
-          </div>
+            </li>
+            <li>Nutsubidze 86, Tbilisi, Georgia</li>
+            <li>(+995) 593 434344</li>
+          </ul>
         </div>
-
-        <img src="./cv.jpg" class="image3x4" alt="image3x4" />
-      </header>
-
-      <hr />
-
-      <section>
-        <h2>Professional Summary</h2>
-        <p class="small">
-          Software Engineer with a unique interdisciplinary background combining
-          technical expertise, business acumen, and analytical thinking.
-          Specialized in building scalable web applications, ERP systems, and
-          financial dashboards using modern JavaScript technologies. My diverse
-          experience in business management, academic research, and software
-          development enables me to bridge technical solutions with real-world
-          business needs effectively.
-        </p>
       </section>
+      <section class="kata-example">
+        <h2>Codewars Kata example — Only One Flag</h2>
+        <p class="kata-description">
+          Description: Write a function that returns <code>true</code> if
+          exactly one boolean flag is true.
+        </p>
+        <figure class="code-block">
+          <figcaption>Solution (JavaScript)</figcaption>
+          <pre><code class="language-js">
+  function onlyOne(...args) {
+    let countTrues = 0;
+    args.forEach((arg) => arg === true && countTrues++);
+    return countTrues === 1;
+  }
 
-      <div class="two-col" style="margin-top: 12px">
-        <main>
-          <section>
-            <h2>Key Projects</h2>
-
-            <div class="project">
-              <strong>ERP Lite System</strong>
-              <span class="meta"
-                >(Personal / Business Project) — React, Next.js, Supabase</span
-              >
-              <ul>
-                <li>
-                  Developed a comprehensive ERP platform for pest control
-                  business “Killers”.
-                </li>
-                <li>
-                  Features: client order management, technician scheduling,
-                  financial reporting, inventory tracking.
-                </li>
-                <li>
-                  Reduced operational overhead by 40% and improved client
-                  communication efficiency.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project">
-              <strong>E-commerce Platform</strong>
-              <span class="meta"
-                >(TBC Academy Capstone) — React, Next.js, Supabase, Stripe</span
-              >
-              <ul>
-                <li>
-                  Built full-featured e-commerce application with shopping cart
-                  and payment processing.
-                </li>
-                <li>
-                  Implemented secure payment integration using Stripe API.
-                </li>
-                <li>
-                  Focused on responsive design and user experience optimization.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project">
-              <strong>Connect Employees</strong>
-              <span class="meta"
-                >(Team Collaboration Platform) — React, Next.js, Supabase</span
-              >
-              <ul>
-                <li>
-                  Developed internal team management system with task assignment
-                  and progress tracking.
-                </li>
-                <li>
-                  Features: employee onboarding, deadline management, comment
-                  system, real-time updates.
-                </li>
-              </ul>
-            </div>
-
-            <hr />
-
-            <h2>Professional Experience</h2>
-
-            <h3 style="margin-bottom: 6px">
-              Software Engineer
-              <span class="meta"
-                >(Freelance / Personal Projects) — 2020 – Present</span
-              >
-            </h3>
-            <ul>
-              <li>
-                Developing web applications and business management systems.
-              </li>
-              <li>
-                Specializing in React.js ecosystem and database-driven
-                applications.
-              </li>
-              <li>
-                Creating solutions for small to medium businesses, particularly
-                in service industries.
-              </li>
-            </ul>
-
-            <h3 style="margin-bottom: 6px">
-              Founder & Director — Killers (Pest Control & Sanitation Services)
-              <span class="meta">2014 – Present</span>
-            </h3>
-            <ul>
-              <li>
-                Founded and successfully operate service-based business with 10+
-                recurring clients.
-              </li>
-              <li>
-                Developed internal ERP system to manage operations, scheduling,
-                and finances.
-              </li>
-              <li>
-                Applied technical skills to automate business processes and
-                improve efficiency.
-              </li>
-            </ul>
-
-            <h3 style="margin-bottom: 6px">
-              Lecturer — University of Georgia
-              <span class="meta">2018 – 2020</span>
-            </h3>
-            <ul>
-              <li>
-                Taught Critical Writing courses, developing structured
-                analytical thinking skills.
-              </li>
-              <li>
-                Enhanced communication abilities and capacity to explain complex
-                concepts clearly.
-              </li>
-              <li>
-                Skills directly applicable to technical documentation and team
-                collaboration.
-              </li>
-            </ul>
-
-            <h3 style="margin-bottom: 6px">
-              Research Assistant — Ilia State University, Faculty of Arts and
-              Sciences <span class="meta">2018 – 2020</span>
-            </h3>
-            <ul>
-              <li>
-                Conducted research in Comparative Literature with focus on
-                contemporary trends.
-              </li>
-              <li>
-                Developed strong analytical and research methodologies
-                applicable to software development.
-              </li>
-              <li>
-                Published academic work requiring attention to detail and
-                systematic approach.
-              </li>
-            </ul>
-
-            <h3 style="margin-bottom: 6px">
-              Department Head & Teacher — Millennium School
-              <span class="meta">2017 – 2019</span>
-            </h3>
-            <ul>
-              <li>
-                Led educational department and managed curriculum development.
-              </li>
-              <li>
-                Supervised team of educators and coordinated academic programs.
-              </li>
-              <li>
-                Gained valuable leadership and project management experience.
-              </li>
-            </ul>
-
-            <h3 style="margin-bottom: 6px">
-              Previous Business Roles <span class="meta">2012 – 2014</span>
-            </h3>
-            <ul>
-              <li>
-                Project Sales Manager — Worked with Kakha Bendukidze on
-                strategic initiatives.
-              </li>
-              <li>
-                Corporate Banker — Bank of Georgia, developed financial analysis
-                skills.
-              </li>
-              <li>
-                Startup Manager — SeeMe Georgia (Auto-Park Management System).
-              </li>
-              <li>Sales Manager — VENGO (Cargo Transit).</li>
-            </ul>
-
-            <hr />
-
-            <h2>Education</h2>
-
-            <h3>
-              Doctoral Studies (Ongoing) — Ilia State University
-              <span class="meta">2017 – Present</span>
-            </h3>
-            <p class="small">
-              Faculty of Arts and Sciences — Interdisciplinary Doctoral Program.
-              Research Focus: Social History of Contemporary Georgian Literature
-              (2000–2020).
-            </p>
-            <p class="small">
-              <strong>International Academic Experience:</strong> Universidad de
-              Valladolid, Spain (2020) — Doctoral Research; Université
-              Catholique de Louvain, Belgium (2019) — Doctoral Research.
-            </p>
-
-            <h3>
-              Master's Degree in Comparative Literature — Ilia State University
-              <span class="meta">2015 – 2017</span>
-            </h3>
-            <p class="small">
-              Thesis: "The death of the author as a key element of the story in
-              the postmodern novel"
-            </p>
-
-            <h3>
-              Master's Degree in Philosophy — Ivane Javakhishvili Tbilisi State
-              University <span class="meta">2013 – 2015</span>
-            </h3>
-            <p class="small">Thesis: "Text, Intertext, Cultural context"</p>
-
-            <h3>
-              Bachelor's Degree in Business Administration — Free University of
-              Tbilisi <span class="meta">2009 – 2013</span>
-            </h3>
-            <p class="small">
-              Major: Business Administration; Minor: Programming
-            </p>
-          </section>
-        </main>
-
-        <aside class="right-card">
-          <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-              <div>
-                <strong>Languages</strong>
-                <div class="small">
-                  JavaScript, TypeScript, Basic Rust, Basic Java, Rust + WASM
-                </div>
-              </div>
-              <div>
-                <strong>Frontend</strong>
-                <div class="small">React.js, Next.js, HTML5, CSS3</div>
-              </div>
-              <div>
-                <strong>Backend & DB</strong>
-                <div class="small">Node.js, Supabase, SQL, REST APIs</div>
-              </div>
-              <div>
-                <strong>Tools</strong>
-                <div class="small">
-                  Git, GitHub, GitLab, Vercel, Linux, Git Bash
-                </div>
-              </div>
-              <div>
-                <strong>Payment</strong>
-                <div class="small">Stripe API</div>
-              </div>
-              <div>
-                <strong>Specialties</strong>
-                <div class="small">
-                  ERP, Financial Dashboards, CRM, E-commerce
-                </div>
-              </div>
-            </div>
-
-            <hr />
-
-            <h2>Certifications & Training</h2>
-            <ul class="small">
-              <li>Cloud & DevOps — EPAM (current)</li>
-              <li>Automated testing in JavaScript — EPAM (current)</li>
-              <li>React Accelerator Program — TBC Academy (2025)</li>
-              <li>
-                Front-End Programming with React — New Horizons (2025) — 32
-                hours, 28 PDUs
-              </li>
-              <li>
-                International Certification by PeopleCert — React Certification
-                Exam (2025)
-              </li>
-            </ul>
-
-            <h2 style="margin-top: 8px">Professional Development</h2>
-            <ul class="small">
-              <li>
-                Teaching and Assessment Strategies — Ilia State University
-                (2016)
-              </li>
-              <li>Social Entrepreneurship — Oikos Summer School (2014)</li>
-              <li>Negotiations and Conflicts — Free University (2012)</li>
-              <li>National Mathematical Olympiad Diploma (2005, 2006)</li>
-            </ul>
-
-            <h2 style="margin-top: 8px">Languages</h2>
-            <ul class="small">
-              <li>Georgian — Native</li>
-              <li>English — C1 (Advanced)</li>
-              <li>Russian — B1 (Intermediate)</li>
-              <li>Spanish — A1 (Beginner)</li>
-              <li>French — A1 (Beginner)</li>
-            </ul>
-
-            <h2 style="margin-top: 8px">Additional Activities</h2>
-            <div class="small">
-              <strong
-                >Founder — Literary Sunday School (Your Library | 2019 –
-                2020)</strong
-              >
-              <p class="small">
-                Organized and managed educational literary programs; developed
-                curriculum and coordinated community engagement initiatives.
-              </p>
-              <strong>Media Experience</strong>
-              <p class="small">
-                Literary Taxi — Author's program on literature (2018–2019).
-                Enhanced communication skills and ability to present complex
-                ideas clearly.
-              </p>
-            </div>
-
-            <h2 style="margin-top: 8px">Personal Interests</h2>
-            <p class="small">
-              Reading, Chess, Sports, Technology Trends, Business Process
-              Optimization
-            </p>
-          </section>
-        </aside>
-      </div>
-
-      <footer>Last updated: September 2025</footer>
+</code></pre>
+        </figure>
+      </section>
+      <p class="note">
+        Note: A complete list of my projects is available in my portfolio. You
+        can find it at:<a
+          href="https://irakliambroladze.vercel.app/"
+          target="_blank"
+        >
+          https://irakliambroladze.vercel.app/</a
+        >
+      </p>
+      <div id="main-grid-content"></div>
+      <footer>
+        <a href="https://github.com/IrakliAmbroladze" target="_blank">
+          <img src="./assets/github.svg" alt="github">
+        </a>
+        <p>last updated: january 2026</p>
+        <a href="https://rs.school/courses/short-track" target="_blank">
+          <img src="./assets/rs-school-logo.svg" alt="github" height="20">
+        </a>
+      </footer>
+      <script type="module" src="./script/index.js"></script>
     </div>
   </body>
 </html>
