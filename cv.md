@@ -24,3 +24,22 @@ Software Engineer with a unique interdisciplinary background combining technical
 - **Soft Skills:** Critical thinking, structured problem-solving, project management, team leadership
 
 ---
+
+## Key Projects
+
+### ERP Lite System (Personal/Business Project)
+**Tech Stack:** React, Next.js, Supabase
+- Developed a comprehensive ERP platform for pest control business *"Killers"*
+- Features: client order management, technician scheduling, financial reporting, inventory tracking
+- Reduced operational overhead by 40% and improved client communication efficiency
+
+### E-commerce Platform (TBC Academy Capstone)
+**Tech Stack:** React, Next.js, Supabase, Stripe
+- Built full-featured e-commerce application with shopping cart and payment processing
+- Implemented secure payment integration using Stripe API
+- Focused on responsive design and user experience optimization
+
+### Connect Employees (Team Collaboration Platform)
+**Tech Stack:** React, Next.js, Supabase
+- Developed internal team management system with task assignment and progress tracking
+- Features: employee onboarding, deadline management, comment system, real-time updates
