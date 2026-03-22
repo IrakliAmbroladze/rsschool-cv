@@ -106,3 +106,46 @@ Software Engineer with a unique interdisciplinary background combining technical
   - Minor: Programming
 
 ---
+
+## Certifications & Training
+
+### Software Development
+- Cloud & DevOps – EPAM *(current)*
+- Automated Testing in JavaScript – EPAM *(current)*
+- React Accelerator Program – TBC Academy *(2025)*
+- Front-End Programming with React – New Horizons *(2025)* – 32 hours, 28 PDUs
+- International Certification by PeopleCert – React Certification Exam *(2025)*
+
+### Professional Development
+- Teaching and Assessment Strategies – Ilia State University *(2016)*
+- Social Entrepreneurship – Oikos Summer School *(2014)*
+- Negotiations and Conflicts – Free University *(2012)*
+
+### Academic Recognition
+- National Mathematical Olympiad Diploma *(2005, 2006)*
+
+---
+
+## Languages
+- **Georgian:** Native
+- **English:** C1 (Advanced)
+- **Russian:** B1 (Intermediate)
+- **Spanish:** A1 (Beginner)
+- **French:** A1 (Beginner)
+
+---
+
+## Additional Activities
+
+- **Founder – Literary Sunday School (Your Library | 2019 – 2020)**
+  - Organized and managed educational literary programs
+  - Developed curriculum and coordinated community engagement initiatives
+
+- **Media Experience**
+  - *Literary Taxi* – Author’s program on literature *(2018 – 2019)*
+  - Enhanced communication skills and ability to present complex ideas clearly
+
+---
+
+## Personal Interests
+Reading, Chess, Sports, Technology Trends, Business Process Optimization
