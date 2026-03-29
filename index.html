@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <title>Irakli Ambroladze</title>
+    <meta
+      name="google-site-verification"
+      content="lcpvrv_iCVz_tSq6oSwdnbwY6-EWo4F3rpioxCjAUqA"
+    >
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#main-grid-content">Projects</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <img src="./assets/cv.png" class="avatar" alt="avatar">
+        <h1 class="header-content">
+          <span class="title-top">
+            <span class="cv">Curriculum Vitae</span>
+            <span class="name">Irakli</span>
+          </span>
+          <span class="title-bottom">
+            <span class="surname">Ambroladze</span>
+            <span class="profession">Software developer</span>
+            <span class="quote">
+              Crafting software is not just about writing code, but about
+              delivering value
+            </span>
+            <span class="line-square">
+              <span class="line"></span>
+              <span class="square bg-black"></span>
+            </span>
+          </span>
+        </h1>
+      </main>
+      <section class="bio">
+        <div class="about-me" id="about-me">
+          <h2 class="subsection-header">About me</h2>
+          <p class="small">
+            <span
+              >Software Engineer with a unique interdisciplinary background
+              combining technical expertise, business acumen, and analytical
+              thinking. Specialized in building scalable web applications, ERP
+              systems, and financial dashboards using modern JavaScript
+              technologies.</span
+            >
+            <br>
+            <br>
+            <span
+              >My diverse experience in business management, academic research,
+              and software development enables me to bridge technical solutions
+              with real-world business needs effectively.</span
+            >
+          </p>
+          <div class="square-wrapper">
+            <div class="square bg-white"></div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <h2 class="subsection-header">contact</h2>
+          <ul class="contact-list">
+            <li>
+              ✉
+              <a href="mailto:ambroladzeirakli@gmail.com"
+                >ambroladzeirakli@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/IrakliAmbroladze"
+                target="_blank"
+                rel="noopener"
+                >github.com/IrakliAmbroladze</a
+              >
+            </li>
+            <li>Nutsubidze 86, Tbilisi, Georgia</li>
+            <li>(+995) 593 434344</li>
+          </ul>
+        </div>
+      </section>
+      <section class="kata-example">
+        <h2>Codewars Kata example — Only One Flag</h2>
+        <p class="kata-description">
+          Description: Write a function that returns <code>true</code> if
+          exactly one boolean flag is true.
+        </p>
+        <figure class="code-block">
+          <figcaption>Solution (JavaScript)</figcaption>
+          <pre><code class="language-js">
+  function onlyOne(...args) {
+    let countTrues = 0;
+    args.forEach((arg) => arg === true && countTrues++);
+    return countTrues === 1;
+  }
+
+</code></pre>
+        </figure>
+      </section>
+      <p class="note">
+        Note: A complete list of my projects is available in my portfolio. You
+        can find it at: https://irakliambroladze.vercel.app/
+      </p>
+      <div id="main-grid-content"></div>
+      <footer>
+        <a href="https://github.com/IrakliAmbroladze" target="_blank">
+          <img src="./assets/github.svg" alt="github">
+        </a>
+        <p>last updated: january 2026</p>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+          <img src="./assets/rs-school-logo.svg" alt="github" height="20">
+        </a>
+      </footer>
+      <script type="module" src="./script/index.js"></script>
+    </div>
+  </body>
+</html>
+
